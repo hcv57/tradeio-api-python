@@ -1,5 +1,9 @@
+import requests
+
+
 def about_get():
-    pass
+    return requests.get("https://api.exchange.trade.io/api/v1/about")
+
 
 def time_get():
-    pass
+    return requests.get("https://api.exchange.trade.io/api/v1/time")
